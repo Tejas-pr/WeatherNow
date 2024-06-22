@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="icon" href="images/weather.png" type="image/x-weather">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- ----------  -->
+</head>
+<body>
+    <h1 class="main-heading">WeatherNow</h1>
+    <div class="card">
+        <div class="search">
+            <!-- it took from react icon extention -->
+            <input type="text" class="search-bar" placeholder="Search">
+            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path></svg></button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city">Enter the city name</h2>
+            <h1 class="temp">-°C</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" class="icon">
+                <div class="description">-</div>
+            </div>
+            <div class="humidity">Humidity: 0%</div>
+            <div class="wind">Wind speed: 0km/h</div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Developer: Tejas P R</p>
+    <a href="tejas.teju02@gmail.com" target="_blank">tejas.teju02@gmail.com</a>
+    <a href="https://www.linkedin.com/in/tejas-p-r-057a4622a/" target="_blank">LinkedIn</a>
+    <a href="https://twitter.com/Tejas67061437" target="_blank">Twitter</a>
+    <a href="https://t.co/2btj7yIV5k" target="_blank">GitHub</a>
+</footer>
+
+</html>

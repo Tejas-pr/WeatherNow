@@ -1,0 +1,135 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    background-image: url(./images/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 120%;
+    animation: change 20s infinite ease-in-out;
+}
+
+.main-heading {
+    font-size: 5.5rem;
+    color: white;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.card {
+    background-color: #000000d0;
+    color: white;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    height: 3.2em;
+    width: 3.2em;
+    outline: none;
+    background-color: #7e7a7a5c;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(190, 188, 188, 0.662);
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4rem 1em;
+    border-radius: 24px;
+    background-color: #7e7a7a5c;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Please enter city name";
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+@keyframes change {
+    0%{
+        background-image: url(./images/image1.jpg);
+    }
+    20%{
+        background-image: url(./images/image2.jpg);
+    }
+    40%{
+        background-image: url(./images/image4.jpg);
+    }
+    60%{
+        background-image: url(./images/image5.jpg);
+    }
+    80%{
+        background-image: url(./images/image6.jpg);
+    }
+    100%{
+        background-image: url(./images/image1.jpg);
+    }
+}
+footer {
+    background-color: #333;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 3px 0;
+    width: 100%;
+    position: fixed;
+    font-family: "Open Sans", sans-serif;
+    bottom: 0;
+}
+
+footer p { margin: 2px 0; }
+
+footer a { color: white; text-decoration: none; font-family: "Open Sans", sans-serif;}
